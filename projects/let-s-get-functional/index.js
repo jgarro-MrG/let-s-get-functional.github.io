@@ -19,11 +19,15 @@
  *    IMPORTANT: Make sure you replace <YOUR_GITHUB_FOLDER with your actual github folder name that is in your workspace.
  */
 
-var maleCount = function(array) {
-  
+const maleCount = function(array) {
+  const result = _.filter(array, (array) => array.gender === 'male');
+  return result.length;
 };
 
-var femaleCount;
+var femaleCount = function(array) {
+    const result = _.filter(array, (array) => array.gender === 'female');
+    return result.length;
+  };
 
 var oldestCustomer;
 
